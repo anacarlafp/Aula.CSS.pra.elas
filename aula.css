@@ -1,0 +1,125 @@
+/* Aulas CSS (Cascading Style Sheets)- Folha de estilo
+
+Da para fazer responsivo com CSS*. Evitar estilo inline, 
+usar grids flexiveis, evite estilo absolute, use media querys se precisar
+
+Mobite firts- pensa primeiro no mobile/
+
+/* Tipos de estilo */
+
+body{
+    color: blueviolet;
+}
+
+/* List´style none para tirar bolinhas do lado das palavras 
+test-decoration tirar risco na parte de baixo
+*/
+
+li{
+    text-decoration: underline;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul{
+    border:1px solid black ;
+    display: flex;
+    justify-content: center;
+}
+
+/* IDs */
+
+#login{
+    background-color: blue;
+    color: cornflowerblue;
+}
+
+#registre{
+    background-color: blue;
+    color: cornflowerblue;
+}
+
+/* Classes */
+
+.copy{
+    font-size: 10px;
+}
+
+.lojana{
+    text-align: center;
+}
+
+/*Tags seria o body */
+
+/* Propriedades do CSS */
+
+.planeta{
+    text-align: center;
+}
+
+.central{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 15px;
+}
+
+/* Display flex fica um lado do outro */
+
+/* Seletores de CSS. Margin o espaço se da do lado de dentro*/
+
+.navegation:hover{
+    color: peru;
+    cursor:pointer;
+    transition:300ms;
+
+}
+
+#primeiro,
+.segundo{
+    border:1px solid royalblue;
+    margin: 30px;
+}
+
+/* O maior que só altera filho direto, uso para algo específico*/
+
+.segundo>p{
+    color: darkorange;
+}
+
+.segundo>div{
+    display:block !important;
+}
+
+/* Grid layout é parecido com flexbox,mas tem algumas diferenças. Forma bidimensional */
+/* Grid são as cores do fim da página */
+
+.grid{
+    display: grid;
+    grid-template-rows: repeat(60px);
+
+/* 1fr e 5 fr são as frações */
+
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 500px 250px;
+
+    /* Pode usar tudo junto */
+
+    /* Gap é margem interna */
+
+    gap: 15px;
+    row-gap: 30px;;
+
+}
+.grid div{
+    padding: 30px;
+}
+
+.Ana{
+    grid-row:2;
+    grid-column-end:3;
+}
+
+/* Esses grid ainda não estão responsivos */
+
